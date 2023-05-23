@@ -48,7 +48,6 @@ class RoomSpace:
         self.length = None
 
         self.reserved_positions = []
-        self.grid = []
 
         # Canvas for grid visualization
         self.canvas = tk.Canvas(self.window, width=1200, height=400)
@@ -59,10 +58,6 @@ class RoomSpace:
         self.canvas.bind("<Button-1>", self.on_canvas_click)
         self.width = room_width
         self.length = room_length
-
-        # Create the grid
-        for i in range(self.length):
-            self.grid += [[0] * self.width]
 
         self.draw_room()
 
@@ -96,10 +91,8 @@ class RoomSpace:
 
         # Toggle the color of the clicked grid square
         if (grid_y, grid_x) not in self.reserved_positions:
-            self.grid[grid_y][grid_x] = 1
             self.reserved_positions.append(tuple((grid_y, grid_x)))
         else:
-            self.grid[grid_y][grid_x] = 0
             self.reserved_positions.remove((grid_y, grid_x))
 
         # Redraw the grid
