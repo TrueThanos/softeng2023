@@ -51,7 +51,7 @@ class RoomSpace:
         self.grid = []
 
         # Canvas for grid visualization
-        self.canvas = tk.Canvas(self.window, width=800, height=400)
+        self.canvas = tk.Canvas(self.window, width=1200, height=400)
         self.canvas.pack(expand=True, fill=tk.BOTH)
 
     def initialize(self, room_width, room_length):
