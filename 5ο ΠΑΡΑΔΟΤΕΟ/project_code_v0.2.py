@@ -1,4 +1,5 @@
 import tkinter as tk
+import json
 
 class RoomDialog:
     def __init__(self):
