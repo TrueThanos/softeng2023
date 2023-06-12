@@ -1,0 +1,22 @@
+{ "speakers" : [
+  { 
+    "model":"KRK Rokit 5 G4",
+    "range":"2",
+    "price":"148"
+  },
+  { 
+    "model":"KRK Rokit 7 G4",
+    "range":"6",
+    "price":"189"
+  },
+  { 
+    "model":"YAMAHA HS5",
+    "range":"3",
+    "price":"169"
+  },
+  { 
+    "model":"YAMAHA HS7",
+    "range":"8",
+    "price":"225"
+  }
+]}
